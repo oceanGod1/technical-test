@@ -1,9 +1,15 @@
 import Navigation from "./Navigation/Navigation";
+import Introduction from "./Introduction/Introduction";
+import Visuals from "./Visuals/Visuals";
+import LandingFooter from "./LandingFooter/LandingFooter";
 
 export default function Landing() {
   return (
-    <main className="w-screen h-[130vh] m-0 px-[9%] font-sans grid grid-cols-2 bg-gradient-to-bl from-[#d4d4d4aa] to-white relative before:content-[''] before:-z-10 before:absolute before:w-full before:h-full before:bg-[linear-gradient(to_bottom_right,#54bd9548_10%,#ffffff_40%,#ffffff_60%,#54bd9532_70%)]">
+    <main className="h-fit m-0 px-[9%] font-customFont grid grid-cols-2 grid-rows-[2.5rem_10.5rem_auto] bg-gradient-to-bl from-[#00000011_40%] to-white_90% relative before:content-[''] before:-z-10 before:absolute before:w-full before:h-full before:bg-[radial-gradient(circle_at_top_left,#54bd9545_10%,transparent_30%)] after:content-[''] after:-z-10 after:absolute after:w-full after:h-full after:bg-[radial-gradient(circle_at_right,#54bd9545_20%,transparent_45%)]">
       <Navigation />
+      <Introduction />
+      <Visuals />
+      <LandingFooter />
     </main>
   );
 }

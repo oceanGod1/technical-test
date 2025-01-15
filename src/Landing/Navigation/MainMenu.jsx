@@ -9,17 +9,17 @@ export default function MainMenu() {
     { id: 5, title: "About Us" },
   ];
   return (
-    <span className="w-[43rem] flex justify-between items-center">
+    <span className="w-[39.575rem] flex justify-between items-center">
       <div className="w-[25.5rem] h-fit flex justify-between">
         {mainMenuArr.map(({ id, title }) => (
           <MenuLink key={id} title={title} />
         ))}
       </div>
-      <div className="w-[10rem] h-fit flex justify-between items-center">
+      <div className="w-[9rem] h-fit flex justify-between items-center">
         <MenuLink title="Login" />
         <a
           href="#"
-          className="px-3 py-2 rounded-[0.625rem] text-[#f8f8fa] text-[1.125rem] font-medium bg-primary"
+          className="px-3 py-2 rounded-[0.625rem] text-[#f8f8fa] text-base font-medium bg-primary"
         >
           Sign Up
         </a>
