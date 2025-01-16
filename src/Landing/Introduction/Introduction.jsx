@@ -1,4 +1,5 @@
-import PrimaryButton from "../../PrimaryButton/PrimaryButton";
+import PrimaryButton from "../../ReccuringCmp/PrimaryButton";
+import PCmp from "../../ReccuringCmp/PCmp";
 
 import introArch from "../../assets/landing-arch.png";
 import playIcon from "../../assets/play-icon.png";
@@ -10,10 +11,14 @@ export default function Introduction() {
         We're here to Increase your Productivity
       </h1>
       <img src={introArch} />
-      <p className="w-[29.3rem] my-6 font-medium text-lg">
-        Let's make your work easier and more organized, using the Taskio
-        Dashboard with many of the latest features in managing work every day.
-      </p>
+      <PCmp
+        width="29.3rem"
+        marginY="6"
+        fSize="lg"
+        textColor="secondary"
+        content="Let's make your work easier and more organized, using the Taskio Dashboard
+      with many of the latest features in managing work every day."
+      />
       <div className="h-fit flex items-center gap-8">
         <PrimaryButton content="Try free trial" />
         <a href="#" className="text-lg font-medium flex items-center gap-4">

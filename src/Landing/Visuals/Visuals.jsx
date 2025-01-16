@@ -16,10 +16,7 @@ export default function Visuals() {
               $450.00
             </p>
           </div>
-          <p
-            href="#"
-            className="px-4 py-1 rounded-[2.5rem] text-[#ffffff] text-[0.8125rem] font-medium bg-primary justify-self-end"
-          >
+          <p className="px-4 py-1 rounded-[2.5rem] text-[#ffffff] text-[0.8125rem] font-medium bg-primary justify-self-end">
             Send
           </p>
           <hr className="row-start-3 col-span-2" />
