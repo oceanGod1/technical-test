@@ -1,11 +1,12 @@
-import LeftHalf from "./LeftHalf/LeftHalf";
-import RightHalf from "./RightHalf/RightHalf";
+import SectionLargestCards from "../ReccuringCmp/SectionLargestCard";
+import LeftCard from "./LeftCard/LeftCard";
+import RightCard from "./RightCard/RightCard";
 
 export default function Ratings() {
   return (
-    <section className="h-[33.8125rem] px-[9%] bg-color4 font-customFont grid grid-cols-[minmax(1rem,39.4rem)_minmax(1rem,29.72rem)] grid-rows-[4rem_auto_auto] justify-center">
-      <LeftHalf />
-      <RightHalf />
-    </section>
+    <SectionLargestCards classes="h-customH1 bg-color4 grid-rows-[4rem_auto_auto] grid-cols-[minmax(1rem,40.25rem)_minmax(1rem,28.95rem)]">
+      <LeftCard />
+      <RightCard />
+    </SectionLargestCards>
   );
 }

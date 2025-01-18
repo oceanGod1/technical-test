@@ -1,15 +1,13 @@
 import H2Cmp from "../../ReccuringCmp/h2Cmp";
 import PrimaryButton from "../../ReccuringCmp/PrimaryButton";
+import GenericButton from "../../ReccuringCmp/GenericButton";
 
 export default function FeaturesHeading() {
   return (
-    <header className="h-fit col-span-2 flex justify-between items-center bg-red-400">
+    <header className="h-fit flex justify-between items-center">
       <H2Cmp
         content="Our Features you can get"
-        fSize="3.125rem"
-        fontWeight="semibold"
-        lHeight="3.78rem"
-        width="20.69rem"
+        classes="w-customW1 text-customFS2 font-semibold leading-customLH2 text-secondary"
       />
       <PrimaryButton content="Get Started" />
     </header>

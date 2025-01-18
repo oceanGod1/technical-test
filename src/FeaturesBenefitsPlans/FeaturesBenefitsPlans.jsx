@@ -1,9 +1,15 @@
-import FeaturesHeading from "./Features/FeaturesHeading";
+import BenefitRightCard from "./Benefits/BenefitRightCard";
+import Benefits from "./Benefits/Benefits";
+import BenefitsLeftCard from "./Benefits/BenefitsLeftCard";
+import Features from "./Features/Features";
+import Plans from "./Plans/Plans";
 
 export default function FeaturesBenefitsPlans() {
   return (
-    <section className="px-[9%] pt-32 font-customFont grid grid-cols-2">
-      <FeaturesHeading />
-    </section>
+    <main>
+      <Features />
+      <Benefits />
+      <Plans />
+    </main>
   );
 }

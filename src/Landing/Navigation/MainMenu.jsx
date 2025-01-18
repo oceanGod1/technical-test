@@ -1,3 +1,4 @@
+import GenericButton from "../../ReccuringCmp/GenericButton";
 import MenuLink from "./MenuLink";
 
 export default function MainMenu() {
@@ -9,20 +10,18 @@ export default function MainMenu() {
     { id: 5, title: "About Us" },
   ];
   return (
-    <span className="w-[39.575rem] flex justify-between items-center">
-      <div className="w-[25.5rem] h-fit flex justify-between">
+    <span className="w-customW7 flex justify-between items-center">
+      <div className="w-customW6 h-fit flex justify-between">
         {mainMenuArr.map(({ id, title }) => (
           <MenuLink key={id} title={title} />
         ))}
       </div>
-      <div className="w-[9rem] h-fit flex justify-between items-center">
+      <div className="w-customW5 h-fit flex justify-between items-center">
         <MenuLink title="Login" />
-        <a
-          href="#"
-          className="px-3 py-2 rounded-[0.625rem] text-[#f8f8fa] text-base font-medium bg-primary"
-        >
-          Sign Up
-        </a>
+        <GenericButton
+          content="Sign Up"
+          classes="px-3 py-2 rounded-customRadius2 text-color9 text-base font-medium bg-primary"
+        />
       </div>
     </span>
   );

@@ -7,11 +7,10 @@ import H2Cmp from "../../ReccuringCmp/h2Cmp";
 
 export default function LandingFooter() {
   return (
-    <div className="row-start-4 col-span-2 my-32">
+    <footer className="row-start-4 col-span-2 my-32">
       <H2Cmp
         content="More than 25,000 teams use Collabs"
-        fSize="2.5rem"
-        tAlign="center"
+        classes="text-customFS1 text-center font-bold text-secondary"
       />
       <div className="mt-14 flex gap-9">
         <img src={unsplashIcon} alt="unsplash icon" />
@@ -20,6 +19,6 @@ export default function LandingFooter() {
         <img src={descriptIcon} alt="descript icon" />
         <img src={grammarlyIcon} alt="grammarly icon" />
       </div>
-    </div>
+    </footer>
   );
 }
