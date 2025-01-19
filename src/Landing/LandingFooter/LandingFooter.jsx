@@ -5,6 +5,13 @@ import descriptIcon from "../../assets/descript-icon.png";
 import grammarlyIcon from "../../assets/grammarly-icon.png";
 import H2Cmp from "../../ReccuringCmp/h2Cmp";
 
+const socials = [
+  { id: 1, src: unsplashIcon, alt: "unsplash icon" },
+  { id: 2, src: notionIcon, alt: "notion icon" },
+  { id: 3, src: intercomIcon, alt: "intercom icon" },
+  { id: 4, src: descriptIcon, alt: "description icon" },
+  { id: 5, src: grammarlyIcon, alt: "grammarly icon" },
+];
 export default function LandingFooter() {
   return (
     <footer className="row-start-4 col-span-2 my-32">
@@ -13,11 +20,9 @@ export default function LandingFooter() {
         classes="text-customFS1 text-center font-bold text-secondary"
       />
       <div className="mt-14 flex gap-9">
-        <img src={unsplashIcon} alt="unsplash icon" />
-        <img src={notionIcon} alt="notion icon" />
-        <img src={intercomIcon} alt="intercom icon" />
-        <img src={descriptIcon} alt="descript icon" />
-        <img src={grammarlyIcon} alt="grammarly icon" />
+        {socials.map(({ id, src, alt }) => (
+          <img key={id} src={src} alt={alt} />
+        ))}
       </div>
     </footer>
   );

@@ -7,10 +7,11 @@ import tickIcon from "../../assets/tick-icon.png";
 import IconSplach from "../../ReccuringCmp/IconSplash";
 import CardSplashCmp from "../../ReccuringCmp/CardSplashCmp";
 import TotalIncomeCard from "../../ReccuringCmp/TotalIncomeCard";
+import ParagraphLikeButton from "../../ReccuringCmp/ParagraphLikeButton";
 
 export default function LandingRightCard() {
   return (
-    <div className="w-full h-fit relative row-start-3 flex justify-end">
+    <figure className="w-full h-fit relative row-start-3 flex justify-end">
       <img src={introImage} alt="landing page image" />
 
       <IconSplach
@@ -28,6 +29,7 @@ export default function LandingRightCard() {
         imgClasses={"-rotate-15"}
         figClasses="w-12 h-12 rounded-lg bg-color8 absolute top-8 -right-8 rotate-15"
       />
+
       <div className="h-[calc(100%-4rem)] w-fit absolute top-8 left-8">
         <CardSplashCmp
           content2="$450.00"
@@ -35,13 +37,15 @@ export default function LandingRightCard() {
           parentClasses="w-48 grid grid-cols-2 grid-rows-customRows1"
           child1Classes="gap-1"
         >
-          <p className="px-4 py-1 rounded-[2.5rem] text-[#ffffff] text-[0.8125rem] font-medium bg-primary justify-self-end">
-            Send
-          </p>
+          <ParagraphLikeButton
+            content="Send"
+            classes="px-4 py-1 rounded-[2.5rem] text-customFS5 font-medium bg-primary justify-self-end"
+          />
+
           <hr className="row-start-3 col-span-2" />
         </CardSplashCmp>
         <TotalIncomeCard classes="right-0 bottom-0" content2="$250.00" />
       </div>
-    </div>
+    </figure>
   );
 }

@@ -1,9 +1,8 @@
-import bulletPoint from "../../assets/bullet-point.png";
 import H2Cmp from "../../ReccuringCmp/h2Cmp";
-import PCmp from "../../ReccuringCmp/PCmp";
+import ListItems from "../../ReccuringCmp/ListItems";
 
 const benefitArr = [
-  { id: 1, content: "Free Consulting With Experince Saving Money" },
+  { id: 1, content: "Free Consulting With Expert Saving Money" },
   { id: 2, content: "Online Banking" },
   { id: 3, content: "Investment Report Every Month" },
   { id: 4, content: "Saving Money For The Future" },
@@ -17,19 +16,7 @@ export default function BenefitsLeftCard() {
         content="What Benefit Will You Get?"
         classes="w-customW2 text-customFS2 font-bold leading-customLH3 text-secondary"
       />
-      <div className="flex flex-col gap-8">
-        {benefitArr.map(({ id, content }) => {
-          return (
-            <div key={id} className="flex gap-5 items-center">
-              <img src={bulletPoint} alt="bullet point" />
-              <PCmp
-                content={content}
-                classes="text-lg text-secondary leading-customLH5"
-              />
-            </div>
-          );
-        })}
-      </div>
+      <ListItems arr={benefitArr} ulClasses="gap-8" liClasses="gap-5" />
     </div>
   );
 }

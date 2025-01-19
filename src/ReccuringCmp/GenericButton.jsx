@@ -1,7 +1,7 @@
-export default function GenericButton({ href, classes, content, children }) {
+export default function GenericButton({ handleChange, classes, content }) {
   return (
-    <a href="#" className={classes}>
-      {children} {content}
-    </a>
+    <button onClick={handleChange} className={classes}>
+      {content}
+    </button>
   );
 }

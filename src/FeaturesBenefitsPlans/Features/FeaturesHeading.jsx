@@ -1,6 +1,5 @@
 import H2Cmp from "../../ReccuringCmp/h2Cmp";
-import PrimaryButton from "../../ReccuringCmp/PrimaryButton";
-import GenericButton from "../../ReccuringCmp/GenericButton";
+import PrimaryLinkButton from "../../ReccuringCmp/PrimaryLinkButton";
 
 export default function FeaturesHeading() {
   return (
@@ -9,7 +8,7 @@ export default function FeaturesHeading() {
         content="Our Features you can get"
         classes="w-customW1 text-customFS2 font-semibold leading-customLH2 text-secondary"
       />
-      <PrimaryButton content="Get Started" />
+      <PrimaryLinkButton content="Get Started" />
     </header>
   );
 }

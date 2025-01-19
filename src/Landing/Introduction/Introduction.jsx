@@ -1,6 +1,6 @@
-import GenericButton from "../../ReccuringCmp/GenericButton";
-import PCmp from "../../ReccuringCmp/PCmp";
-import PrimaryButton from "../../ReccuringCmp/PrimaryButton";
+import LinkButton from "../../ReccuringCmp/LinkButton";
+import ParagraphHolder from "../../ReccuringCmp/ParagraphHolder";
+import PrimaryLinkButton from "../../ReccuringCmp/PrimaryLinkButton";
 
 import introArch from "../../assets/landing-arch.png";
 import playIcon from "../../assets/play-icon.png";
@@ -16,20 +16,20 @@ export default function Introduction() {
 
       <img src={introArch} />
 
-      <PCmp
+      <ParagraphHolder
         classes="w-customW3 my-6 text-secondary font-medium text-lg leading-customLH5"
         content="Let's make your work easier and more organized, using the Taskio Dashboard
       with many of the latest features in managing work every day."
       />
 
       <div className="h-fit flex items-center gap-8">
-        <PrimaryButton content="Try free trial" />
-        <GenericButton
+        <PrimaryLinkButton content="Try free trial" />
+        <LinkButton
           content="View Demo"
           classes="px-customP1 py-5 rounded-customRadius1 text-secondary text-lg font-medium bg-transparent flex items-center gap-4 hover:bg-backup hover:text-white"
         >
           <img src={playIcon} />
-        </GenericButton>
+        </LinkButton>
       </div>
     </div>
   );

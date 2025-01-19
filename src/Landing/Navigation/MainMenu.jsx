@@ -1,4 +1,4 @@
-import GenericButton from "../../ReccuringCmp/GenericButton";
+import LinkButton from "../../ReccuringCmp/LinkButton";
 import MenuLink from "./MenuLink";
 
 export default function MainMenu() {
@@ -18,7 +18,7 @@ export default function MainMenu() {
       </div>
       <div className="w-customW5 h-fit flex justify-between items-center">
         <MenuLink title="Login" />
-        <GenericButton
+        <LinkButton
           content="Sign Up"
           classes="px-3 py-2 rounded-customRadius2 text-color9 text-base font-medium bg-primary"
         />
