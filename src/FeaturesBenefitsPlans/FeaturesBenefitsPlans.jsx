@@ -13,5 +13,3 @@ export default function FeaturesBenefitsPlans() {
     </main>
   );
 }
-
-// bg-[radial-gradient(circle_at_left,#54bd9545_10%,transparent_30%)]

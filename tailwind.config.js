@@ -16,6 +16,7 @@ export default {
         customW10: "37.5rem",
         customW11: "1.625rem",
         customW12: "20.4rem",
+        customW13: "2.875rem",
       },
       height: {
         customH1: "33.18rem",
@@ -67,6 +68,8 @@ export default {
         color8: "#fbc75e",
         color9: "#f8f8fa",
         color10: "#f9fafb",
+        color11: "#161c28",
+        color12: "#222938",
       },
       backgroundImage: {
         customBG1:
