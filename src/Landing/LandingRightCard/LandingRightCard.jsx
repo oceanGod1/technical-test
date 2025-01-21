@@ -11,26 +11,30 @@ import ParagraphLikeButton from "../../ReccuringCmp/ParagraphLikeButton";
 
 export default function LandingRightCard() {
   return (
-    <figure className="w-full h-fit relative row-start-3 flex justify-end">
-      <img src={introImage} alt="landing page image" />
+    <figure className="-z-20 pt-12 row-start-4 col-span-2 relative md:p-0 md:row-start-3 md:flex md:justify-end lg:h-fit">
+      <img
+        src={introImage}
+        alt="landing page image"
+        className="w-full md:h-3/4 md:w-auto"
+      />
 
       <IconSplach
         image={tickIcon}
-        figClasses="w-10 h-10 rounded-lg bg-color6 absolute top-44 left-20 -rotate-12"
+        figClasses="w-10 h-10 rounded-lg bg-color6 absolute top-44 left-20 -rotate-12 hidden lg:grid"
       />
       <IconSplach
         image={messageIcon}
         imgClasses={"-rotate-15"}
-        figClasses="w-10 h-10 rounded-lg bg-color7 absolute right-12 -bottom-7 rotate-15"
+        figClasses="w-10 h-10 rounded-lg bg-color7 absolute right-12 -bottom-7 rotate-15 md:hidden lg:grid"
       />
 
       <IconSplach
         image={databaseIcon}
         imgClasses={"-rotate-15"}
-        figClasses="w-12 h-12 rounded-lg bg-color8 absolute top-8 -right-8 rotate-15"
+        figClasses="w-12 h-12 rounded-lg bg-color8 absolute top-8 -right-8 rotate-15 hidden md:grid"
       />
 
-      <div className="h-[calc(100%-4rem)] w-fit absolute top-8 left-8">
+      <div className="h-[calc(100%-4rem)] w-full absolute top-8 md:hidden lg:block lg:left-8 lg:w-fit">
         <CardSplashCmp
           content2="$450.00"
           content1="Enter amount"

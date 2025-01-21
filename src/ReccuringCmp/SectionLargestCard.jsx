@@ -1,7 +1,7 @@
 export default function SectionLargestCards({ classes, children }) {
   return (
     <section
-      className={`font-customFont grid justify-center relative ${classes} `}
+      className={`px-[9%] font-customFont relative grid justify-center ${classes} `}
     >
       {children}
     </section>

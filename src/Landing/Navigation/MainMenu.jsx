@@ -1,7 +1,7 @@
 import LinkButton from "../../ReccuringCmp/LinkButton";
 import MenuLink from "./MenuLink";
 
-export default function MainMenu() {
+export default function MainMenu({ classes, childClasses }) {
   const mainMenuArr = [
     { id: 1, title: "Home" },
     { id: 2, title: "Product" },
@@ -10,13 +10,19 @@ export default function MainMenu() {
     { id: 5, title: "About Us" },
   ];
   return (
-    <span className="w-customW7 flex justify-between items-center">
-      <div className="w-customW6 h-fit flex justify-between">
+    <span
+      className={`lg:w-customW7 lg:justify-between lg:items-center ${classes}`}
+    >
+      <div
+        className={`lg:w-customW6 h-fit lg:flex lg:justify-between ${childClasses}`}
+      >
         {mainMenuArr.map(({ id, title }) => (
           <MenuLink key={id} title={title} />
         ))}
       </div>
-      <div className="w-customW5 h-fit flex justify-between items-center">
+      <div
+        className={`lg:w-customW5 h-fit lg:flex lg:justify-between items-center  ${childClasses}`}
+      >
         <MenuLink title="Login" />
         <LinkButton
           content="Sign Up"

@@ -28,7 +28,7 @@ const listItems = [
 
 export default function RightCard() {
   return (
-    <ul className=" w-11/12 list-none justify-self-end row-span-3 col-start-2 grid content-center gap-6">
+    <ul className=" w-11/12 py-8 list-none row-start-3 col-span-2 md:justify-self-end md:row-span-3 md:col-start-2 md:col-span-1 lg:py-0 grid content-center gap-6">
       {listItems.map(({ id, image, content1, content2 }) => (
         <ListItem
           key={id}
