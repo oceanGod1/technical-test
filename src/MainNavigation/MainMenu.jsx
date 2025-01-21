@@ -1,4 +1,4 @@
-import LinkButton from "../../ReccuringCmp/LinkButton";
+import LinkButton from "../ReccuringCmp/LinkButton";
 import MenuLink from "./MenuLink";
 
 export default function MainMenu({ classes, childClasses }) {
