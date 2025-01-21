@@ -3,7 +3,7 @@ import MainMenu from "./MainMenu";
 export default function MobileCurtain({ activeCurtain }) {
   const activateCurtainStyle = activeCurtain
     ? "left-0 before:bg-[#00000010]"
-    : "-left-full before:bg-transparent";
+    : "-left-[110vw] before:bg-transparent";
 
   return (
     <section

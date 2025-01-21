@@ -6,7 +6,7 @@ export default function GenericDuration({ toggle, handleBillingChange }) {
 
   return (
     <div
-      className={`w-fit p-2 z-50 rounded-customRadius2 shadow-customBS1 bg-white flex ${containerStyle} self-start items-center justify-self-center`}
+      className={`w-fit p-2 rounded-customRadius2 shadow-customBS1 bg-white flex ${containerStyle} self-start items-center justify-self-center`}
     >
       <GenericButton
         handleChange={handleBillingChange}
