@@ -17,37 +17,44 @@ const imageArr = [
 
 export default function TopLeftCard() {
   return (
-    <div className="relative grid gap-5">
+    <div className="relative col-span-2 grid gap-2 lg:gap-5 lg:col-span-1">
       <H2Cmp
         content="People are Talking About What We Do"
-        classes="font-semibold text-customFS2 leading-customLH3 text-white"
+        classes="font-semibold lg:text-customFS2 lg:leading-customLH3 text-white"
       />
       <ParagraphHolder
-        classes="font-medium text-customLH5 text-backup"
+        classes="font-medium text-sm md:text-base lg:text-customLH5 text-backup"
         content="Everything you need to accept payments and grow your money from anywhere on the planet"
       />
 
-      <img src={quote} alt="quotation mark" className="py-5" />
+      <img src={quote} alt="quotation mark" className="py-5 w-6 lg:w-auto" />
       <img
         src={quote}
         alt="quotation mark"
-        className="absolute right-8 bottom-32 rotate-180"
+        className="hidden absolute right-8 bottom-32 rotate-180 lg:block"
       />
 
-      <blockquote className="font-medium text-customLH5 text-backup">
+      <blockquote className="font-medium text-sm md:text-base text-customLH5 text-backup">
         I am very helped by this E-wallet application, my days are very easy to
         use this application and its very helpful in my life, even I can pay a
         short time
       </blockquote>
 
       <ParagraphHolder
-        classes="py-5 font-medium text-customLH5 text-backup"
+        classes="py-5 font-medium text-sm md:text-base lg:text-customLH5 text-backup"
         content="_Aria Z inanrio"
       />
 
       <figure className="pe-7 flex justify-between">
         {imageArr.map(({ id, image }) => {
-          return <img key={id} src={image} alt={`reviewer ${id} photo`} />;
+          return (
+            <img
+              key={id}
+              src={image}
+              alt={`reviewer ${id} photo`}
+              className="w-8 sm:w-16 lg:w-auto"
+            />
+          );
         })}
       </figure>
     </div>

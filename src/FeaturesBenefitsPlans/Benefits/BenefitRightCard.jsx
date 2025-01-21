@@ -9,7 +9,7 @@ import CardSplashCmp from "../../ReccuringCmp/CardSplashCmp";
 import TotalIncomeCard from "../../ReccuringCmp/TotalIncomeCard";
 export default function BenefitRightCard() {
   return (
-    <div className="relative flex justify-end">
+    <div className="hidden relative customMQ2:flex justify-end">
       <img
         src={computerImage}
         alt="photo of a laptop and teacup on a table"

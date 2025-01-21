@@ -9,11 +9,11 @@ export default function ListItem({ image, content1, content2 }) {
       </div>
       <H3Cmp
         content={content1}
-        classes="my-1 text-customFS3 font-bold leading-customLH4 text-secondary"
+        classes="my-1 lg:text-customFS3 font-bold leading-customLH4 text-secondary"
       />
       <ParagraphHolder
         content={content2}
-        classes="my-1 text-lg text-backup font-medium leading-customLH5"
+        classes="my-1 text-sm md:text-base lg:text-lg text-backup font-medium leading-customLH5"
       />
     </li>
   );

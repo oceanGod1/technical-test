@@ -7,7 +7,7 @@ export default function MobileCurtain({ activeCurtain }) {
 
   return (
     <section
-      className={`h-screen w-screen fixed top-0 grid grid-cols-4 duration-300 ease-in-4 lg:hidden ${activateCurtainStyle} content-[""] before:-z-10 before:w-full before:h-full before:absolute before:delay-200 before:duration-300 before:ease-in-4`}
+      className={`z- h-screen w-screen fixed top-0 grid grid-cols-4 duration-300 ease-in-4 lg:hidden ${activateCurtainStyle} content-[""] before:-z-10 before:w-full before:h-full before:absolute before:delay-200 before:duration-300 before:ease-in-4`}
     >
       <div className="h-full pt-16 bg-color9 col-span-4 sm:col-span-3 ">
         <MainMenu

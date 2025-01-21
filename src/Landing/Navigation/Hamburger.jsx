@@ -6,7 +6,7 @@ export default function ({ handleCurtain, activeCurtain }) {
 
   return (
     <div
-      className={`z-20 w-6 h-5 p-1 box-content flex flex-col justify-between cursor-pointer content-[''] before:w-6 before:h-1 before:duration-300 before:ease-in after:w-6 after:h-1 after:duration-300 after:ease-in lg:hidden ${styles}`}
+      className={`z-20 w-6 h-5 p-1 box-content justify-self-end flex flex-col justify-between cursor-pointer content-[''] before:w-6 before:h-1 before:duration-300 before:ease-in after:w-6 after:h-1 after:duration-300 after:ease-in lg:hidden ${styles}`}
       onClick={handleCurtain}
     >
       <div

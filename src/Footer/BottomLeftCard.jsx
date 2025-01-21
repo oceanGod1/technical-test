@@ -5,7 +5,7 @@ import forwardArrow from "../assets/forward-arrow.png";
 
 export default function BottomLeftCard() {
   return (
-    <div className="pt-24 grid gap-3">
+    <div className="pt-8 lg:pt-24 grid gap-3 col-span-2 lg:col-span-1 content-start">
       <CompanyLogo />
       <ParagraphHolder
         classes="mb-3 font-medium text-customLH5 text-backup"
@@ -16,7 +16,7 @@ export default function BottomLeftCard() {
         <input
           type="search"
           placeholder="Search"
-          className="flex-1 outline-none border-none text-backup bg-inherit"
+          className="flex-1 min-w-4 outline-none border-none text-backup bg-inherit"
         />
         <GenericButton classes="w-customW13 h-customW13 rounded-full bg-primary grid place-items-center">
           <img src={forwardArrow} alt="forward arrow" />

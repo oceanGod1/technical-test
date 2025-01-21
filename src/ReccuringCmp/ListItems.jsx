@@ -17,7 +17,7 @@ export default function ListItems({
             <img src={bulletPoint} alt="bullet point" className={imgClasses} />
             <ParagraphHolder
               content={content}
-              classes={`text-lg ${pClasses} text-secondary leading-customLH5`}
+              classes={`text-sm md:text-base font-medium lg:text-lg ${pClasses} text-secondary leading-customLH5`}
             />
           </li>
         );

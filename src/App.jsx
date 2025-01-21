@@ -8,8 +8,8 @@ function App() {
     <>
       <Landing />
       <Ratings />
-      {/* <FeaturesBenefitsPlans /> */}
-      {/* <Footer /> */}
+      <FeaturesBenefitsPlans />
+      <Footer />
     </>
   );
 }

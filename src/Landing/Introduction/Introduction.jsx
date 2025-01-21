@@ -9,7 +9,7 @@ export default function Introduction() {
   return (
     <div className="h-fit row-start-3 col-span-2 md:col-span-1 grid gap-6">
       <header>
-        <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-[5rem] lg:leading-[5.625rem] tracking-wide">
+        <h1 className="font-bold text-4xl text-secondary sm:text-5xl md:text-6xl lg:text-[5rem] lg:leading-[5.625rem] tracking-wide">
           We're here to Increase your Productivity
         </h1>
       </header>

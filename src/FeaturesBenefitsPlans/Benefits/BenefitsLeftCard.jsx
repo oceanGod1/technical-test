@@ -9,14 +9,18 @@ const benefitArr = [
   { id: 5, content: "Online Transaction" },
 ];
 
-export default function BenefitsLeftCard() {
+export default function BenefitsLeftCard({ classes }) {
   return (
-    <div className="grid gap-12 content-start">
+    <div className={`${classes} grid gap-4 lg:gap-12 content-start`}>
       <H2Cmp
         content="What Benefit Will You Get?"
-        classes="w-customW2 text-customFS2 font-bold leading-customLH3 text-secondary"
+        classes="lg:w-customW2 lg:text-customFS2 text-start font-bold lg:leading-customLH3 text-secondary"
       />
-      <ListItems arr={benefitArr} ulClasses="gap-8" liClasses="gap-5" />
+      <ListItems
+        arr={benefitArr}
+        ulClasses="gap-4 lg:gap-8"
+        liClasses="gap-5"
+      />
     </div>
   );
 }

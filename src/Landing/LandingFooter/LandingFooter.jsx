@@ -17,7 +17,7 @@ export default function LandingFooter() {
     <footer className="my-16 row-start-5 col-span-2 md:row-start-4 lg:my-32">
       <H2Cmp
         content="More than 25,000 teams use Collabs"
-        classes="text-3xl lg:text-customFS1 text-center font-bold text-secondary"
+        classes="lg:text-customFS1 text-center font-bold text-secondary"
       />
       <div className="mt-14 flex gap-9 justify-around flex-wrap">
         {socials.map(({ id, src, alt }) => (

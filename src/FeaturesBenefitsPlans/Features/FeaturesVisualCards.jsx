@@ -1,6 +1,7 @@
 import collaborationIcon from "../../assets/collaboration-teams-icon.png";
 import analyticsIcon from "../../assets/daily-analytics-icon.png";
 import cloudStorageIcon from "../../assets/cloud-storage-icon.png";
+import BenefitsLeftCard from "../Benefits/BenefitsLeftCard";
 
 import FeaturesSingleCard from "./FeaturesSingleCard";
 
@@ -29,7 +30,7 @@ const cardDetails = [
 
 export default function FeatureVisualCards() {
   return (
-    <div className="flex justify-between">
+    <div className="grid md:grid-cols-[repeat(auto-fit,_minmax(23rem,1fr))]  gap-y-8 customMQ1:flex customMQ1:justify-between">
       {cardDetails.map(({ id, image, content1, content2 }) => {
         return (
           <FeaturesSingleCard
@@ -40,6 +41,7 @@ export default function FeatureVisualCards() {
           />
         );
       })}
+      <BenefitsLeftCard classes="customMQ2:hidden justify-self-center" />
     </div>
   );
 }

@@ -36,7 +36,7 @@ const footerNavArr = [
 
 export default function BottomRighCard() {
   return (
-    <nav className="pt-24 flex justify-between">
+    <nav className="pt-24 flex justify-between flex-wrap gap-6 col-span-2 lg:col-span-1">
       {footerNavArr.map(({ id, heading, content }) => (
         <NavList key={id} heading={heading} content={content} />
       ))}

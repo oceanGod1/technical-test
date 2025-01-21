@@ -4,7 +4,7 @@ import H3Cmp from "../ReccuringCmp/H3Cmp";
 
 export default function TopRightForm() {
   return (
-    <form className="px-[5.37rem] pt-10 rounded-customRadius3 bg-color12 grid content-start gap-4">
+    <form className="p-6 lg:px-12 xl:px-[5.37rem] pt-10 rounded-customRadius3 bg-color12 grid content-start col-span-2 gap-4 lg:col-span-1">
       <img
         src={headingIcon}
         alt="image of stacked coins"
@@ -24,7 +24,7 @@ export default function TopRightForm() {
       <input
         type="email"
         placeholder="Enter your email"
-        className="p-4 rounded-customRadius2 text-sm"
+        className="p-4 min-w-4 rounded-customRadius2 text-sm outline-none border-none"
       />
 
       <label
@@ -37,7 +37,7 @@ export default function TopRightForm() {
         name=""
         id=""
         placeholder="What are you saying ?"
-        className="p-4 rounded-customRadius2 text-sm"
+        className="p-4 min-w-4 rounded-customRadius2 text-sm outline-none border-none"
       ></textarea>
       <GenericButton
         content="Request Demo"

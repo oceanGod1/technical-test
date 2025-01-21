@@ -92,6 +92,11 @@ export default {
         customCols1: "auto 1fr auto",
         customCols2: "auto 1fr",
       },
+      screens: {
+        customMQ1: "1440px",
+        customMQ2: "1347px",
+        customMQ3: "1312px",
+      },
     },
   },
   plugins: [],

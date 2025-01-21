@@ -6,16 +6,16 @@ export default function GenericDuration({ toggle, handleBillingChange }) {
 
   return (
     <div
-      className={`w-fit p-2 rounded-customRadius2 shadow-customBS1 bg-white flex ${containerStyle} self-start items-center justify-self-center`}
+      className={`w-fit p-2 z-50 rounded-customRadius2 shadow-customBS1 bg-white flex ${containerStyle} self-start items-center justify-self-center`}
     >
       <GenericButton
         handleChange={handleBillingChange}
         content={buttonContent("Bill Monthly", "Bill Yearly")}
-        classes="w-40 text-secondary text-lg font-medium text-center"
+        classes="w-24 lg:w-40 text-sm text-secondary lg:text-lg font-medium text-center"
       />
       <ParagrapLikeButton
         content={buttonContent("Bill Yearly", "Bill Monthly")}
-        classes="w-40 h-14 rounded-customRadius2 shadow-customBS1 text-lg font-medium bg-primary grid place-items-center"
+        classes="w-24 h-9 lg:h-14 text-sm lg:w-40 rounded-customRadius2 shadow-customBS1 lg:text-lg font-medium bg-primary grid place-items-center"
       />
     </div>
   );

@@ -22,23 +22,6 @@ export default function ChoosePlan({ toggle }) {
 
     {
       planHeading: {
-        id: 2,
-        title: "Pro",
-        addInfo: "Experience the power of infinite possibilities",
-        price: toggle ? "96" : "8",
-        buttonContent: "Go to pro",
-      },
-      planFeatures: [
-        { id: 1, content: "4 Users" },
-        { id: 2, content: "All apps" },
-        { id: 3, content: "Unlimited editable exports" },
-        { id: 4, content: "Folders and collaboration" },
-        { id: 5, content: "All income apps" },
-      ],
-    },
-
-    {
-      planHeading: {
         id: 3,
         title: "Bussiness",
         addInfo: "Unveil new superpowers and join the Design League",
@@ -51,6 +34,23 @@ export default function ChoosePlan({ toggle }) {
         { id: 3, content: "Single Sign-On (SSO)" },
         { id: 4, content: "Co-coneception program" },
         { id: 5, content: "Collaboration-Soon" },
+      ],
+    },
+
+    {
+      planHeading: {
+        id: 2,
+        title: "Pro",
+        addInfo: "Experience the power of infinite possibilities",
+        price: toggle ? "96" : "8",
+        buttonContent: "Go to pro",
+      },
+      planFeatures: [
+        { id: 1, content: "4 Users" },
+        { id: 2, content: "All apps" },
+        { id: 3, content: "Unlimited editable exports" },
+        { id: 4, content: "Folders and collaboration" },
+        { id: 5, content: "All income apps" },
       ],
     },
   ];
@@ -74,6 +74,7 @@ export default function ChoosePlan({ toggle }) {
         classesH3={logic("text-white", "text-secondary")}
         buttonClasses={logic("text-white bg-primary", "text-primary bg-white")}
         featuresCardClasses={logic("bg-white", "bg-color10")}
+        centerPro={title == "Bussiness" && "customMQ3:order-last"}
       >
         {logic(
           <>
@@ -89,7 +90,7 @@ export default function ChoosePlan({ toggle }) {
   });
 
   return (
-    <ul className="list-none grid grid-cols-3 place-items-center">
+    <ul className="list-none flex flex-wrap justify-around items-center gap-y-12">
       {mapPlans}
     </ul>
   );

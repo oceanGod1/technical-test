@@ -3,15 +3,19 @@ import ParagraphHolder from "../../ReccuringCmp/ParagraphHolder";
 
 export default function FeaturesSingleCard({ image, content1, content2 }) {
   return (
-    <div className="w-fit grid gap-8">
-      <img src={image} alt={`${content1} icon`} className="h-[26rem]" />
+    <div className="justify-self-center grid justify-items-center lg:justify-items-start lg:gap-8">
+      <img
+        src={image}
+        alt={`${content1} icon`}
+        className="w-full customMQ1:h-[26rem]"
+      />
       <H3Cmp
         content={content1}
-        classes="text-customFS4 font-semibold leading-customLH5 text-secondary"
+        classes="lg:text-customFS4 font-semibold lg:leading-customLH5 text-secondary"
       />
       <ParagraphHolder
         content={content2}
-        classes="w-customW4 text-lg text-backup leading-customLH5"
+        classes="w-[12rem] text-center lg:text-start lg:w-customW4 text-sm md:text-base lg:text-lg text-backup lg:leading-customLH5"
       />
     </div>
   );
