@@ -10,7 +10,6 @@ export default function Plans() {
   const handleBillingChange = e => {
     setToggle(!toggle);
   };
-  console.log(toggle);
   return (
     <SectionLargestCards classes="py-8 2xl:pt-[8.53rem] lg:pb-[8.2rem] grid-rows-[auto_6.2rem_auto] customMQ3:grid-rows-[auto_6.2rem_43.5rem] grid-cols-[minmax(1rem,69.2rem)] gap-10">
       <PlansHeading />

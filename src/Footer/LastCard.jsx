@@ -4,7 +4,7 @@ export default function LastCard() {
     <div className="pt-4 lg:pt-0 col-span-2 flex flex-col items-center gap-4 lg:flex-row justify-between">
       <ParagraphHolder
         classes="font-medium text-customLH5 text-white text-center"
-        content="&copy; 2025 Biccas Inc. Copyright, all rights reserved"
+        content={`\u00A9 ${new Date().getFullYear()} Biccas Inc. Copyright, all rights reserved`}
       />
 
       <div className="flex flex-col lg:flex-row gap-2">
