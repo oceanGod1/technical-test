@@ -1,4 +1,3 @@
-import MainNavigation from "./MainNavigation/MainNavigation";
 import FeaturesBenefitsPlans from "./FeaturesBenefitsPlans/FeaturesBenefitsPlans";
 import Footer from "./Footer/Footer";
 import Landing from "./Landing/Landing";
@@ -11,7 +10,6 @@ function App() {
       <Ratings />
       <FeaturesBenefitsPlans />
       <Footer />
-      <MainNavigation />
     </>
   );
 }

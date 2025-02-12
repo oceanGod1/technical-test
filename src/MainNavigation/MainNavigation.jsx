@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import ReactDOM from "react-dom";
 import CompanyLogo from "../ReccuringCmp/CompanyLogo";
 import Hamburger from "./Hamburger";
 import MainMenu from "./MainMenu";
@@ -24,7 +24,7 @@ export default function MainNavigation() {
   const handleCurtain = e => {
     setActiveCurtain(!activeCurtain);
   };
-  return (
+  return ReactDOM.createPortal(
     <header
       className={`h-20 w-screen px-[9%] font-customFont duration-500 ease-in-4 fixed ${scrollStyles} flex items-end`}
     >
@@ -37,6 +37,7 @@ export default function MainNavigation() {
         />
         <MobileCurtain activeCurtain={activeCurtain} />
       </nav>
-    </header>
+    </header>,
+    document.body
   );
 }
